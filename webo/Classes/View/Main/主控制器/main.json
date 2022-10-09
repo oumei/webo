@@ -1,0 +1,41 @@
+[
+  {
+    "imageName" : "bottom_bar_sy",
+    "visitorInfo" : {
+      "imageName" : "",
+      "message" : "关注一些人，回这里看看有什么惊喜"
+    },
+    "clsName" : "WBHomeViewController",
+    "title" : "首页"
+  },
+  {
+    "visitorInfo" : {
+      "imageName" : "no_logon_message",
+      "message" : "快登录看看吧"
+    },
+    "imageName" : "bottom_bar_xx",
+    "clsName" : "WBMessageViewController",
+    "title" : "消息"
+  },
+  {
+    "clsName" : "UIViewController"
+  },
+  {
+    "clsName" : "WBDiscoverViewController",
+    "imageName" : "bottom_bar_dd",
+    "visitorInfo" : {
+      "message" : "登录后，发现周边好玩的",
+      "imageName" : ""
+    },
+    "title" : "发现"
+  },
+  {
+    "clsName" : "WBProfileViewController",
+    "visitorInfo" : {
+      "imageName" : "",
+      "message" : "登录后，您的个人相册、个人资料，展示给别人"
+    },
+    "title" : "我",
+    "imageName" : "bottom_bar_we"
+  }
+]

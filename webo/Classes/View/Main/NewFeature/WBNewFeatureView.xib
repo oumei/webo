@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WBNewFeatureView" customModule="webo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IGJ-ke-2Rw">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lwu-VK-ytk">
+                    <rect key="frame" x="157" y="687" width="100" height="40"/>
+                    <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="EJF-fd-91H"/>
+                        <constraint firstAttribute="width" constant="100" id="fuB-id-XbG"/>
+                    </constraints>
+                    <state key="normal" title="进入微博">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="enterStatus:" destination="iN0-l3-epB" eventType="touchUpInside" id="Jvw-rW-AhZ"/>
+                    </connections>
+                </button>
+                <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="TOa-zr-sOU">
+                    <rect key="frame" x="136.5" y="735" width="141" height="28"/>
+                    <color key="pageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="currentPageIndicatorTintColor" systemColor="systemOrangeColor"/>
+                </pageControl>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="IGJ-ke-2Rw" secondAttribute="bottom" id="7W7-bp-at5"/>
+                <constraint firstItem="Lwu-VK-ytk" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="AXa-uK-TfD"/>
+                <constraint firstItem="TOa-zr-sOU" firstAttribute="centerX" secondItem="Lwu-VK-ytk" secondAttribute="centerX" id="BGy-xw-ri0"/>
+                <constraint firstItem="IGJ-ke-2Rw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="HoA-RP-dg6"/>
+                <constraint firstItem="IGJ-ke-2Rw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="PXz-9E-te7"/>
+                <constraint firstItem="IGJ-ke-2Rw" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="RrN-Hb-S3H"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Lwu-VK-ytk" secondAttribute="bottom" constant="135" id="nEO-D3-2SK"/>
+                <constraint firstItem="TOa-zr-sOU" firstAttribute="top" secondItem="Lwu-VK-ytk" secondAttribute="bottom" constant="8" symbolic="YES" id="sN9-ab-1r9"/>
+            </constraints>
+            <connections>
+                <outlet property="enterButton" destination="Lwu-VK-ytk" id="eZA-Lc-RtH"/>
+                <outlet property="pageControl" destination="TOa-zr-sOU" id="pXZ-9o-PIH"/>
+                <outlet property="scrollView" destination="IGJ-ke-2Rw" id="odv-M3-igD"/>
+            </connections>
+            <point key="canvasLocation" x="-23.188405797101453" y="35.491071428571423"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
